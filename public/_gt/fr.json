@@ -1,22 +1,75 @@
 {
   "0038db7528deee41": "Votre nom complet",
-  "03317a4a27c63e78": "Décrivez votre problème en détail…",
+  "03317a4a27c63e78": "Décrivez le problème en détail...",
   "0954502afa7bde53": "Il s'agit d'une application de démonstration construite avec gt-next pour présenter des fonctionnalités d'assistance client multilingue. Aucun ticket d'assistance réel n'est créé ou traité. Toutes les données affichées sont statiques et uniquement à des fins de démonstration.",
-  "0d353dbfdbbafbc2": "Centre d’assistance et portail de support client avec FAQ multilingue, suivi des tickets et informations de contact.",
-  "115c69de3202f664": "Ouvrir",
+  "0c730b7f189776b6": "Voir sur GitHub",
+  "0d353dbfdbbafbc2": "Un portail d’assistance client et de helpdesk avec FAQ multilingue, suivi des tickets et informations de contact.",
   "12d60d080c45d3af": "Sujet",
-  "1b1659738e269719": "Impossible de réinitialiser le mot de passe après modification de l’adresse e‑mail",
-  "250db89bd2518015": "tickets nécessitent votre attention",
+  "19886a089a4ffd84": [
+    "Construit avec ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    ", ",
+    {
+      "c": "Next.js",
+      "i": 2,
+      "t": "a"
+    },
+    " et ",
+    {
+      "c": "Tailwind CSS",
+      "i": 3,
+      "t": "a"
+    },
+    ". En savoir plus sur le ",
+    {
+      "c": "développement d'applications multilingues",
+      "i": 4,
+      "t": "a"
+    },
+    "."
+  ],
+  "1b1659738e269719": "Impossible de réinitialiser le mot de passe après un changement d’adresse e-mail",
   "25a69e5e68371699": "Oui. Accédez à Paramètres, puis à Gestion des données, et sélectionnez Exporter. Vous pouvez exporter au format CSV, JSON ou PDF. Les exports volumineux sont traités en arrière-plan et vous serez notifié lorsqu'ils seront prêts.",
+  "31c4750421f50fa0": {
+    "d": {
+      "b": {
+        "closed": {
+          "c": "Fermé",
+          "i": 2,
+          "t": "C2"
+        },
+        "in-progress": {
+          "c": "En cours",
+          "i": 2,
+          "t": "C2"
+        },
+        "open": {
+          "c": "Ouvrir",
+          "i": 2,
+          "t": "C2"
+        },
+        "resolved": {
+          "c": "Résolu",
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
   "393ad01e561e08ea": "Comment réinitialiser mon mot de passe ?",
-  "3bb78e3287227f54": "Brève description de votre problème",
+  "3bb78e3287227f54": "Brève description du problème",
   "438e46de245ce325": "Contactez-nous",
-  "44a263592c9458f4": "Écart de facturation sur la facture de février",
-  "453894637a81520e": "Résolu",
+  "44a263592c9458f4": "Anomalie de facturation sur la facture de février",
   "4614a422f1430cd7": "Nom",
   "4c6c38b56bde5dda": "Comment contacter un agent humain ?",
   "4cbcecb6ab4b6812": "Tickets ouverts",
-  "51e003781af4ea3b": "ticket nécessite votre attention",
   "566617c9fffde845": "Tickets récents",
   "63df2b2cf168fe5b": "Soumettre la demande",
   "677379c92aa017a4": "Les widgets du tableau de bord ne se chargent pas dans Safari",
@@ -27,11 +80,38 @@
   "84eba152dc93a8e7": "Accédez à vos paramètres de compte et sélectionnez Abonnement. Choisissez le forfait qui correspond à vos besoins et suivez les instructions. Les modifications prennent effet immédiatement et la facturation est calculée au prorata.",
   "89de98a3a4de3f48": "Suivez les tickets ouverts, les temps de réponse et la satisfaction client. Changez de langue pour voir comment tout le contenu s'adapte à votre locale.",
   "94493230e3966179": "Mise à jour",
-  "987796c2241442d7": "Fermé",
   "9d5345efb94951a7": "Puis-je exporter mes données ?",
   "a4741ab918b3ed04": "La limitation de débit de l’API renvoie un code d’erreur incorrect",
+  "b50fd5e160f4e4ff": {
+    "d": {
+      "b": {
+        "many": {
+          "c": "tickets nécessitent votre attention",
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": "tickets nécessitent votre attention",
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": "tickets nécessitent votre attention",
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": "ticket nécessite votre attention",
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
   "b63b31b2c7d06283": "L’intégration SSO avec Okta ne redirige pas",
-  "b901d8a75fdd232b": "En cours",
   "b9f40e8cfc0dec36": "Aperçu du support",
   "bba36a1235666401": "Comment mettre à niveau mon abonnement ?",
   "c2bebbd7462193ce": "Quelles sont vos heures d'assistance ?",
@@ -40,8 +120,9 @@
   "d48a13a6faf8f48b": "Temps de réponse moy.",
   "d6a25be069601d64": "Taux de satisfaction",
   "dbb0c951f7d4cfde": "Support client | Général",
-  "e28e5eb8f878f074": "vous@example.com",
+  "e28e5eb8f878f074": "you@example.com",
   "effdcd633af15789": "E-mail",
+  "f0c207d87cfc284d": "Assistance clientèle",
   "f25f0c6017467019": "Foire aux questions",
-  "f62c87b9ee4588b5": "La fonction d’export dépasse le délai d’attente sur de gros volumes de données"
+  "f62c87b9ee4588b5": "La fonction d’exportation expire pour les grands jeux de données"
 }

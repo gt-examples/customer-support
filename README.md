@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Customer Support
+
+A multilingual help desk and customer support portal with FAQ, ticket tracking, contact form, and key metrics — built with [gt-next](https://generaltranslation.com) to showcase real-world i18n patterns.
+
+**[Live Demo](https://customer-support.generaltranslation.dev)** | **[General Translation Docs](https://generaltranslation.com/docs)**
+
+## About
+
+This example app demonstrates how to build a fully internationalized customer support portal using General Translation's `gt-next` library. It features a ticket dashboard with status badges, FAQ section, contact form, and statistics overview — all fully translated across five locales (English, Spanish, French, Japanese, Chinese).
+
+## GT Features Used
+
+- `<T>` — JSX translation (wide wrapping pattern)
+- `<Branch>` — Locale-aware conditional rendering (ticket status badges)
+- `<Plural>` — Pluralization (ticket counts)
+- `<Num>` — Number formatting (statistics)
+- `<DateTime>` — Date/time formatting (ticket timestamps)
+- `<Var>` — Dynamic value interpolation
+- `getGT` — Server-side string translations (metadata, placeholders)
+- `<LocaleSelector>` — Language picker
+- `loadTranslations` — Local translation storage
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/gt-examples/customer-support.git
+cd customer-support
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org)
+- [General Translation](https://generaltranslation.com) (gt-next)
+- [Tailwind CSS](https://tailwindcss.com)

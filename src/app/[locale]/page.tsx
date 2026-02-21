@@ -78,19 +78,22 @@ function StatusBadge({ status }: { status: TicketStatus }) {
     <span
       className={`inline-block text-xs px-2 py-0.5 rounded border ${colors[status]}`}
     >
-      <Branch
-        branch={status}
-        open={<T>Open</T>}
-        in-progress={<T>In Progress</T>}
-        resolved={<T>Resolved</T>}
-        closed={<T>Closed</T>}
-      />
+      <T>
+        <Branch
+          branch={status}
+          open={<>Open</>}
+          in-progress={<>In Progress</>}
+          resolved={<>Resolved</>}
+          closed={<>Closed</>}
+        />
+      </T>
     </span>
   );
 }
 
 export default async function Home() {
   const gt = await getGT();
+  const viewOnGitHub = gt("View on GitHub");
 
   // Pre-translate ticket subjects so they appear in all locales
   const translatedSubjects: Record<string, string> = {
@@ -118,7 +121,7 @@ export default async function Home() {
             </a>
             <span className="text-neutral-700">/</span>
             <h1 className="text-sm font-semibold text-neutral-100">
-              Customer Support
+              <T>Customer Support</T>
             </h1>
           </div>
           <div className="flex items-center gap-3">
@@ -127,7 +130,7 @@ export default async function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-neutral-200 transition-colors"
-              aria-label="View on GitHub"
+              aria-label={viewOnGitHub}
             >
               <svg
                 width="20"
@@ -166,11 +169,13 @@ export default async function Home() {
               <Num>{openCount}</Num>
             </p>
             <p className="text-sm text-neutral-500 mt-1">
-              <Plural
-                n={openCount}
-                singular={<T>ticket requires attention</T>}
-                plural={<T>tickets require attention</T>}
-              />
+              <T>
+                <Plural
+                  n={openCount}
+                  singular={<>ticket requires attention</>}
+                  plural={<>tickets require attention</>}
+                />
+              </T>
             </p>
           </div>
           <div className="border border-neutral-800 rounded-lg p-5 bg-neutral-900/50">
@@ -347,13 +352,23 @@ export default async function Home() {
         </div>
 
         {/* Disclaimer */}
-        <div className="border-t border-neutral-800 pt-8">
+        <div className="border-t border-neutral-800 pt-8 space-y-3">
           <p className="text-xs text-neutral-600 leading-relaxed max-w-xl">
             <T>
               This is a demo application built with gt-next to showcase
               multilingual customer support features. No actual support tickets
               are created or processed. All data shown is static and for
               demonstration purposes only.
+            </T>
+          </p>
+          <p className="text-xs text-neutral-600 leading-relaxed max-w-xl">
+            <T>
+              Built with{" "}
+              <a href="https://generaltranslation.com" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">General Translation</a>,{" "}
+              <a href="https://nextjs.org" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">Next.js</a>, and{" "}
+              <a href="https://tailwindcss.com" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>.
+              Learn more about{" "}
+              <a href="https://generaltranslation.com/docs" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">multilingual app development</a>.
             </T>
           </p>
         </div>
